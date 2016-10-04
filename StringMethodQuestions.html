@@ -1,0 +1,199 @@
+<div id="show"></div>
+
+
+
+<script>
+
+//How can I determine how many letters a string contains?
+stringLength();
+function stringLength()
+    {
+        var str = " Welcome to Thunderdome";
+        var answer = str.length;
+        document.getElementById("show").innerHTML = "'Welcome to Thunderdome' has a length of: "+
+        "<br/>"+answer + "letters";
+       
+        
+    }
+    
+//How can I find a string in a string?
+stringInString();
+function stringInString()
+{
+    var string = " The first rule of fightclub is you do not talk about fightclub.";
+    var answer = string.includes("fightclub",5);
+    document.getElementById("show").innerHTML = "Does the string"+"<br/>"+
+    " 'The first rule of fightclub is you do not talk about fightclub.' contain the word"+
+        " 'fightclub' at the fifth location "+ "<br/>"+ answer;
+}
+
+//How can I check whether a string ends with specified string/characters?
+stringEndsWith()
+function stringEndsWith()    
+    {
+        var str = " The first rule of fightclub is you do not talk about fightclub.";
+        var string = " The first rule of fightclub is you do not talk about fightclub.";
+        var string2 = " The first rule of fightclub is you do not talk about fightclub";
+        
+         document.getElementById("show").innerHTML= str +"<br/>"+ "Does the string end with 'first'= " +string.endsWith("first")
+         + "<br/>" + "Does the string end with the word 'fightclub'= " + string2.endsWith("fightclub");
+        
+    }
+
+//How can I check whether a string contains a specified string or set of characters?  
+setOfCharactersCheck();
+function setOfCharactersCheck()
+    {
+        var str = " The first rule of fightclub is you do not talk about fightclub.";
+        document.getElementById("show").innerHTML = str + "<br/>" + "Does the string contain the word '             second '" +
+        "<br/>" + "answer =" + str.includes("second");
+//        var string1 = "The second rule of fightclub is you do not talk about fightclub.";
+//         document.getElementById("show").innerHTML = string1 + "<br/>" + "Does the string contain the word '             second '" +
+//        "<br/>" + "answer =" + string1.includes("second");
+
+        
+    }
+    
+ //How can I Compares two strings?
+compareTwoStrings();
+function compareTwoStrings()
+    {
+        var str = "abc";
+        var str2 = "def";
+        var answer = str.localeCompare(str2);
+        console.log(str.localeCompare(str2)); 
+        document.getElementById("show").innerHTML = "Do string 'abc' and 'def' match " + answer+
+        "<br/>"+ "-1 equals false";
+        
+    }
+     
+//How can I check whether a string begins with a specified character(s)?
+checkBeginStringChar();
+function checkBeginStringChar()
+    {
+        var string = "a time of dragons and magic";
+        var answer = string.startsWith("A");
+        document.getElementById("show").innerHTML = "Does the string 'a time of dragons and magic' "+
+        "begin with 'A'"+"<br/>"+ answer;       
+    }
+    
+//How can I convert a string to uppercase letters?
+convertStrUpperCase();
+function convertStrUpperCase()
+    {
+        var string = "a time of dragons and magic";
+        var answer = string.toUpperCase();
+         document.getElementById("show").innerHTML = "Convert 'a time of dragons and magic' to uppercase"+"<br/>"+answer;      
+    }
+  
+ //If I start with a lower case string like a first name, how can I make the first letter uppercase when I show it on the page?
+ capitalizeFirstLetter();
+ function capitalizeFirstLetter(str)
+  {
+    var string = "tyler durden";
+    var answer = string.charAt(0).toUpperCase()+string.slice(1);
+    document.getElementById("show").innerHTML = "Capitalize the first name of 'tyler durden' "+
+    "<br/>"+ answer;
+ }
+    
+//How can I remove whitespace from either ends of a string?
+ removeWhiteSpaces();
+ function removeWhiteSpaces()
+    {
+        var string = " tyler durden  ";
+        var answer = string.trim();
+        document.getElementById("show").innerHTML = "Remove white spaces from the beginning and end of " +"<br/>"+"                    tyler durden                               "  +
+        "<br/>"+answer;
+    }
+    
+   
+
+
+
+    
+
+
+
+
+
+
+
+
+ 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+</script>

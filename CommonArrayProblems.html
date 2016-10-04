@@ -1,0 +1,176 @@
+<div id="show"></div>
+<script>
+
+ //How do I remove an element from the middle of an //array?
+
+ function removeElementMiddleArray()
+    {
+        var nums =  [2,5,7,9,12,15];   
+        nums.splice(3,1);
+        document.getElementById("show").innerHTML = " array = 2,5,7,9,12,15"+"<br/>"
+        "splice 3,1"+"<br/>"+ nums;
+    }
+
+//How do I add an element to the middle of an //array?
+
+function addElemMidArray()
+    {
+      var nums =  [2,5,7,9,12,15]; 
+      nums.splice(2,0,13,14);
+      document.getElementById("show").innerHTML= "array [2,5,7,9,12,15]"+"<br/>"+"splice (2,0,13,14)"+nums;
+    }
+
+//Adds 2 elements at position 2
+
+function addTwoElemAtPosiTwo()
+{
+    
+    var nums =  [2,5,7,9,12,15]; 
+    nums.splice(2,0,13,14);
+    document.getElementById("show").innerHTML= "array [2,5,7,9,12,15]"+"<br/>"+"splice two elements at position 2"+
+    nums;
+}
+       
+//How do I add an array of integers ?
+ sumArray();  
+ function sumArray()
+    {
+        
+        var nums =  [2,5,7,9,12,15];
+        document.getElementById("show").innerHTML = "array [2,5,7,9,12,15]"+"<br/>"+"total = "+
+        nums.reduce();
+    }
+
+//How do I sort the elements of an array?
+sortArray();
+function sortArray()
+    {      
+      var states = ['Arizona','Colorado','Nevada','Hawaii','Mississippi','Texas'];
+      document.getElementById("show").innerHTML ="array ['Arizona','Colorado','Nevada','Hawaii','Mississippi','Texas']"+
+     "<br/>"+"sorted array = "+states.sort();
+    }
+    
+//How do I join two or more arrays?
+joinTwoArrays();
+function joinTwoArrays()
+    {
+        var states = ['arizona','colorado','wyoming','texas'];
+        var cities= ['tucson','denver','cheyenne','dallas'];        
+        var answer = states.concat(cities);
+        document.getElementById("show").innerHTML ="arrays to join: ['arizona','colorado','wyoming','texas']"+"<br/>"+
+        "['tucson','denver','cheyenne','dallas']"+answer;
+    }
+
+//How do I copy array elements within the array, to //and from specified positions?
+copyElemWithinArray();
+function copyElemWithinArray()
+    {
+        var nums =  [2,5,7,9,12,15];
+        document.getElementById("show").innerHTML ="array  [2,5,7,9,12,15]" +"<br/>"+ nums.copyWithin(2,0,2);
+    }
+
+//How do I search an array for an element and //returns its position?
+indexOfArray();
+function indexOfArray()
+    {
+         var nums =  [2,5,7,9,12,15];
+         var answer = nums.indexOf(9);
+        document.getElementById("show").innerHTML =  "array [2,5,7,9,12,15]"+"<br/>"+"index of 9= "+answer;
+    }
+ 
+//How do I clear/reset an array?
+resetArray();
+function resetArray()
+    {
+        var nums =  [2,5,7,9,12,15];
+        var answer= nums;
+        document.getElementById("show").innerHTML =  "array [2,5,7,9,12,15]"+"<br/>"+"array cleared = "+answer;
+    }
+
+//How do I check whether an object is an array?
+function myFunction()
+    {
+        var colors = ['red','blue','green','black','yellow','orange','purple'];
+        var answer = Array.isArray(colors);
+        document.getElementById("show").innerHTML =  "array ['red','blue','green','black','yellow','orange','purple']"+"<br/>"
+        +"how to check whether an object is an array = "+answer;
+    }
+
+//How do I convert an array to a string?
+//How do I join all elements of an array into a string?
+joinElemArrayToString();
+function joinElemArrayToString()
+    {
+        var colors = ['red','blue','green','black','yellow','orange','purple'];
+        var answer = colors.join();
+        document.getElementById("show").innerHTML =  "array ['red','blue','green','black','yellow','orange','purple']"+"<br/>"
+        +"array joined into string = "+answer;
+    }
+
+//How do I reduce the values of an array to a //single value (going left-to-right)?
+  sortArrrayLftToRght();
+  function sortArrrayLftToRght()
+    {
+        var colors = ['red','blue','green','black','yellow','orange','purple'];
+        var answer = colors.sort();
+        document.getElementById("show").innerHTML ="array ['red','blue','green','black','yellow','orange','purple']"+"<br/>"
+        +"sorted array left-to-right "+ "<br/>"+answer;
+    }
+//How do I reduce the values of an array to a //single value (going right-to-left)?
+sortArrayRghtToLft();
+function sortArrayRghtToLft()
+    {
+       var colors = ['red','blue','green','black','yellow','orange','purple'];
+       var answer = colors.sort();
+       var answer2 = colors.reverse();
+       document.getElementById("show").innerHTML ="array ['red','blue','green','black','yellow','orange','purple']"+"<br/>"
+       +"sorted array right-to-left "+ "<br/>"+answer+"<br/>"+answer2;
+    }
+    
+//How do I add new elements to the beginning of an array?
+addElemBegArray();
+function addElemBegArray()
+    {
+         var colors = ['red','blue','green','black','yellow','orange','purple'];
+         var addColors = ['teal','pink'];
+         var answer = colors.unshift(addColors);
+         document.getElementById("show").innerHTML ="array ['red','blue','green','black','yellow','orange','purple']"+"<br/>"
+        +"add colors to front of array: teal,pink "+ "<br/>"+answer;
+        
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
